@@ -1,23 +1,23 @@
-FirstName,LastName,Email,Phone,MobilePhone,AccountName,Title,MailingCity,MailingState,LeadSource
+FirstName,LastName,Email,ContactPhone,MobilePhone,AccountName,Title,MailingCity,MailingState,LeadSource
 Sophia,Jones,user0@example.org,555-813-6931,555-553-8435,NovaCore Technologies,CEO,Boston,AZ,Web
 Liam,Johnson,user1@example.io,555-734-3658,555-100-1891,Acme Corp,Developer,Seattle,TX,Partner
 Liam,Garcia,user2@example.io,555-752-7421,555-746-8415,Green Horizon Ltd,Engineer,Chicago,WA,Partner
-John,Khan,user3@webmail.com,555-215-3450,555-510-1060,Acme Corp,Developer,Chicago,TX,Trade Show
+John,Khan,user3@webmail.com,555-215-3450,555-510-1060,Acme Corp,Developer,Chicago,TX,Event
 Marcus,Williams,user4@mycompany.co,555-390-1983,555-131-2833,Silverline Systems,VP of Sales,Miami,CO,Web
-Aisha,Doe,user5@businessmail.co,555-499-7614,555-673-7102,OmniTech Global,Product Owner,Miami,WA,Trade Show
-Olivia,Garcia,user6@businessmail.org,555-938-2796,555-483-5395,Silverline Systems,Marketing Director,Miami,MA,Trade Show
+Aisha,Doe,user5@businessmail.co,555-499-7614,555-673-7102,OmniTech Global,Product Owner,Miami,WA,Event
+Olivia,Garcia,user6@businessmail.org,555-938-2796,555-483-5395,Silverline Systems,Marketing Director,Miami,MA,Event
 Daniel,Jones,user7@example.com,555-776-3463,555-387-6140,Green Horizon Ltd,Engineer,Austin,CA,Email Campaign
 Marcus,Brown,user8@mailservice.co,555-882-5363,555-302-2045,BrightPath Inc,IT Manager,Denver,CO,Referral
 Emily,Williams,user9@example.co,555-662-5956,555-264-6205,CloudNine Ventures,IT Manager,Boston,CO,Referral
 Olivia,Lee,user10@webmail.co,555-483-6129,555-970-5444,Crimson Peak Solutions,CTO,Denver,FL,Web
 Aisha,Ramirez,user11@mailservice.co,555-921-5547,555-876-4399,Tech Solutions,Product Owner,San Francisco,CO,Email Campaign
-Carlos,Smith,user12@example.com,555-353-2036,555-496-1322,Tech Solutions,Product Owner,Chicago,CO,Trade Show
+Carlos,Smith,user12@example.com,555-353-2036,555-496-1322,Tech Solutions,Product Owner,Chicago,CO,Event
 Daniel,Doe,user12@mailservice.com,555-622-1287,555-917-9297,Startup Inc,Developer,Seattle,CA,Email Campaign
 Carlos,Brown,user14@webmail.org,555-180-4773,555-979-4697,NovaCore Technologies,Product Owner,Chicago,CA,Web
 Daniel,Smith,user15@businessmail.net,555-669-9834,555-342-3180,Skyline Enterprises,CTO,Miami,CA,Advertisement
 Liam,Lee,user12@example.io,555-866-1592,555-214-1609,Silverline Systems,Sales Rep,Denver,CA,Email Campaign
 John,Doe,user12@example.io,555-903-1526,555-615-1926,HarborView Analytics,CEO,New York,IL,Advertisement
-Daniel,Lee,user12@example.io,555-380-1451,555-556-2333,Skyline Enterprises,IT Manager,Seattle,TX,Trade Show
+Daniel,Lee,user12@example.io,555-380-1451,555-556-2333,Skyline Enterprises,IT Manager,Seattle,TX,Event
 Daniel,Doe,user19@mailservice.com,555-278-5341,555-810-2712,Crimson Peak Solutions,CEO,Los Angeles,AZ,Web
 Liam,Brown,user20@mailservice.co,555-652-2549,555-705-1008,Cobalt Ridge Solutions,Marketing Director,Austin,CA,Advertisement
 Daniel,Lee,user21@webmail.io,555-608-6549,555-959-3997,Acme Corp,CEO,Chicago,IL,Email Campaign
@@ -28,7 +28,7 @@ John,Brown,user25@mailservice.com,555-336-9180,555-373-1652,Startup Inc,Marketin
 John,Smith,user26@mailservice.com,555-168-5681,555-413-4353,Quantum Leap Co,Developer,Austin,CA,Partner
 Carlos,Khan,user27@example.co,555-797-7902,555-238-7970,OmniTech Global,Sales Rep,San Francisco,WA,Advertisement
 Marcus,Jones,user12@mailservice.org,555-288-4457,555-882-8898,Acme Corp,Product Owner,Boston,FL,Referral
-Sophia,Garcia,user12@mailservice.org,555-138-2612,555-903-2700,Pinnacle Consulting,CTO,New York,CA,Trade Show
+Sophia,Garcia,user12@mailservice.org,555-138-2612,555-903-2700,Pinnacle Consulting,CTO,New York,CA,Event
 Sophia,Williams,user30@webmail.io,555-808-9766,555-170-7060,Vertex Dynamics,Developer,Seattle,FL,Web
 Olivia,Khan,user12@mailservice.org,555-384-6843,555-785-6400,Silverline Systems,Marketing Director,Austin,TX,Advertisement
 Liam,Jones,user32@mailservice.co,555-735-3140,555-852-7606,Startup Inc,CEO,Los Angeles,MA,Referral
@@ -37,36 +37,36 @@ Liam,Garcia,user34@example.org,555-989-9259,555-847-1443,Pinnacle Consulting,Eng
 Emily,Lee,user35@businessmail.io,555-150-8433,555-185-4754,Green Horizon Ltd,IT Manager,Miami,IL,Referral
 John,Lee,user36@mycompany.net,555-559-8847,555-844-2205,HarborView Analytics,Engineer,Chicago,MA,Web
 Carlos,Lee,user37@example.net,555-807-5041,555-276-3849,Pinnacle Consulting,IT Manager,New York,AZ,Partner
-Carlos,Doe,user38@webmail.co,555-812-3493,555-144-2178,Silverline Systems,Analyst,Seattle,CA,Trade Show
+Carlos,Doe,user38@webmail.co,555-812-3493,555-144-2178,Silverline Systems,Analyst,Seattle,CA,Event
 John,Johnson,user39@webmail.com,555-127-4680,555-762-7571,Startup Inc,CEO,Los Angeles,NY,Web
 Liam,Johnson,user40@mailservice.co,555-246-5014,555-129-6673,Quantum Leap Co,Marketing Director,New York,IL,Advertisement
 Emily,Lee,user41@mycompany.org,555-830-7285,555-576-3130,Vertex Dynamics,Analyst,New York,WA,Email Campaign
-Jane,Smith,user42@webmail.org,555-718-1626,555-970-7982,Skyline Enterprises,Analyst,Los Angeles,IL,Trade Show
-Jane,Smith,user43@businessmail.org,555-988-5634,555-434-3551,NexGen Innovations,IT Manager,Boston,IL,Trade Show
-Jane,Smith,user44@webmail.io,555-435-4118,555-219-6513,Crimson Peak Solutions,Developer,Boston,AZ,Trade Show
+Jane,Smith,user42@webmail.org,555-718-1626,555-970-7982,Skyline Enterprises,Analyst,Los Angeles,IL,Event
+Jane,Smith,user43@businessmail.org,555-988-5634,555-434-3551,NexGen Innovations,IT Manager,Boston,IL,Event
+Jane,Smith,user44@webmail.io,555-435-4118,555-219-6513,Crimson Peak Solutions,Developer,Boston,AZ,Event
 Olivia,Williams,user45@businessmail.org,555-259-1635,555-233-3881,Green Horizon Ltd,Marketing Director,Boston,TX,Advertisement
 Olivia,Brown,user46@example.com,555-349-5975,555-882-6893,Skyline Enterprises,Product Owner,Denver,CA,Partner
 Aisha,Brown,user47@businessmail.co,555-607-2726,555-936-6637,CloudNine Ventures,Sales Rep,Austin,CO,Email Campaign
-Daniel,Lee,user48@webmail.org,555-154-3053,555-587-8157,Silverline Systems,VP of Sales,Phoenix,WA,Trade Show
+Daniel,Lee,user48@webmail.org,555-154-3053,555-587-8157,Silverline Systems,VP of Sales,Phoenix,WA,Event
 Emily,Khan,user49@businessmail.com,555-694-9945,555-474-7560,Skyline Enterprises,CTO,Seattle,AZ,Web
-Aisha,Brown,user50@mailservice.io,555-547-4180,555-618-3227,Startup Inc,Marketing Director,Miami,FL,Trade Show
-Daniel,Ramirez,user51@businessmail.org,555-479-4400,555-535-3757,Quantum Leap Co,CTO,Austin,CA,Trade Show
+Aisha,Brown,user50@mailservice.io,555-547-4180,555-618-3227,Startup Inc,Marketing Director,Miami,FL,Event
+Daniel,Ramirez,user51@businessmail.org,555-479-4400,555-535-3757,Quantum Leap Co,CTO,Austin,CA,Event
 Jane,Williams,user52@example.net,555-249-2645,555-916-5825,OmniTech Global,Engineer,Seattle,IL,Web
-Marcus,Jones,user53@mailservice.com,555-607-7135,555-688-1918,Green Horizon Ltd,VP of Sales,Austin,CA,Trade Show
+Marcus,Jones,user53@mailservice.com,555-607-7135,555-688-1918,Green Horizon Ltd,VP of Sales,Austin,CA,Event
 Daniel,Johnson,user54@mycompany.net,555-747-6838,555-318-4129,Quantum Leap Co,Analyst,Miami,CO,Referral
-Carlos,Brown,user55@mycompany.net,555-184-4999,555-846-9958,NovaCore Technologies,Marketing Director,Seattle,TX,Trade Show
+Carlos,Brown,user55@mycompany.net,555-184-4999,555-846-9958,NovaCore Technologies,Marketing Director,Seattle,TX,Event
 John,Garcia,user56@example.co,555-166-5025,555-691-5685,Startup Inc,Developer,Seattle,FL,Referral
 Emily,Jones,user57@example.com,555-240-5459,555-244-7264,NexGen Innovations,Marketing Director,Seattle,FL,Web
 Olivia,Ramirez,user58@webmail.co,555-799-1957,555-325-2688,BrightPath Inc,Product Owner,Miami,CO,Referral
 Liam,Smith,user59@mycompany.co,555-628-1515,555-423-5739,Green Horizon Ltd,Marketing Director,San Francisco,WA,Referral
 Aisha,Ramirez,user60@businessmail.org,555-109-1845,555-449-5114,NextPhase Digital,VP of Sales,Los Angeles,WA,Email Campaign
 Olivia,Ramirez,user61@mailservice.org,555-862-1817,555-996-4890,NextPhase Digital,CEO,New York,NY,Partner
-Jane,Jones,user62@mailservice.net,555-544-2881,555-882-3939,CloudNine Ventures,Developer,Miami,NY,Trade Show
-Olivia,Lee,user63@mailservice.com,555-366-5280,555-144-9407,OmniTech Global,Developer,Chicago,NY,Trade Show
+Jane,Jones,user62@mailservice.net,555-544-2881,555-882-3939,CloudNine Ventures,Developer,Miami,NY,Event
+Olivia,Lee,user63@mailservice.com,555-366-5280,555-144-9407,OmniTech Global,Developer,Chicago,NY,Event
 Emily,Smith,user64@mailservice.net,555-451-8874,555-371-3394,BrightPath Inc,Developer,Phoenix,CA,Advertisement
 Aisha,Williams,user65@mailservice.net,555-436-2297,555-603-5873,Cobalt Ridge Solutions,VP of Sales,Los Angeles,AZ,Email Campaign
 John,Khan,user66@businessmail.net,555-210-5413,555-438-9986,Vertex Dynamics,Developer,Seattle,CO,Email Campaign
-Liam,Lee,user67@example.co,555-231-9461,555-328-1347,HarborView Analytics,IT Manager,Los Angeles,CA,Trade Show
+Liam,Lee,user67@example.co,555-231-9461,555-328-1347,HarborView Analytics,IT Manager,Los Angeles,CA,Event
 Sophia,Ramirez,user68@businessmail.org,555-420-4101,555-111-8433,Green Horizon Ltd,Engineer,Los Angeles,MA,Email Campaign
 Daniel,Smith,user69@webmail.io,555-742-4049,555-577-7031,NexGen Innovations,IT Manager,Boston,CO,Web
 Emily,Ramirez,user70@webmail.com,555-674-7617,555-524-4523,Cobalt Ridge Solutions,IT Manager,Denver,TX,Referral
@@ -74,7 +74,7 @@ Jane,Khan,user71@mailservice.org,555-367-4346,555-913-5465,Vertex Dynamics,VP of
 Liam,Williams,user72@mycompany.io,555-752-1557,555-839-6408,Quantum Leap Co,CEO,Miami,CO,Referral
 Aisha,Williams,user73@example.io,555-155-1085,555-739-4305,Silverline Systems,Product Owner,Austin,CA,Referral
 John,Khan,user74@webmail.org,555-404-4684,555-134-6130,NovaCore Technologies,Sales Rep,Denver,FL,Web
-John,Johnson,user75@webmail.io,555-160-8521,555-882-7007,Blue Ocean Tech,Sales Rep,San Francisco,IL,Trade Show
+John,Johnson,user75@webmail.io,555-160-8521,555-882-7007,Blue Ocean Tech,Sales Rep,San Francisco,IL,Event
 Daniel,Smith,user76@mailservice.co,555-522-6141,555-827-3793,Acme Corp,VP of Sales,Los Angeles,NY,Advertisement
 Jane,Williams,user77@businessmail.org,555-667-9532,555-251-4644,Startup Inc,Analyst,Phoenix,CA,Advertisement
 Marcus,Lee,user78@webmail.com,555-968-1387,555-652-8208,NovaCore Technologies,Analyst,Boston,AZ,Email Campaign
@@ -84,7 +84,7 @@ Marcus,Jones,user81@businessmail.net,555-947-9373,555-587-1370,HarborView Analyt
 Jane,Jones,user82@mycompany.org,555-524-3030,555-858-7214,NextPhase Digital,IT Manager,New York,IL,Referral
 Liam,Jones,user83@mailservice.io,555-741-6439,555-350-8099,Skyline Enterprises,VP of Sales,Chicago,TX,Email Campaign
 Liam,Williams,user84@mailservice.net,555-751-9866,555-209-7332,Green Horizon Ltd,CEO,Austin,IL,Partner
-Jane,Brown,user85@webmail.net,555-161-5966,555-766-8255,NexGen Innovations,Engineer,New York,IL,Trade Show
+Jane,Brown,user85@webmail.net,555-161-5966,555-766-8255,NexGen Innovations,Engineer,New York,IL,Event
 Emily,Ramirez,user86@example.io,555-299-3525,555-407-5373,Tech Solutions,Product Owner,San Francisco,MA,Partner
 Carlos,Smith,user87@webmail.net,555-617-2351,555-860-5514,NovaCore Technologies,CTO,Boston,CA,Advertisement
 Olivia,Smith,user88@webmail.org,555-947-3415,555-300-3779,Globex Corporation,Marketing Director,Denver,CA,Partner
@@ -94,7 +94,7 @@ Sophia,Smith,user91@webmail.org,555-239-7656,555-659-5647,Startup Inc,Engineer,B
 Aisha,Johnson,user92@mailservice.io,555-251-2436,555-636-6542,Green Horizon Ltd,Product Owner,Phoenix,TX,Partner
 Marcus,Doe,user93@mailservice.net,555-689-4810,555-916-2232,Silverline Systems,Marketing Director,Chicago,CA,Web
 Carlos,Johnson,user94@mailservice.com,555-214-7892,555-326-9138,NexGen Innovations,Developer,San Francisco,MA,Email Campaign
-Daniel,Garcia,user95@webmail.com,555-925-3202,555-357-8386,BrightPath Inc,VP of Sales,Miami,MA,Trade Show
+Daniel,Garcia,user95@webmail.com,555-925-3202,555-357-8386,BrightPath Inc,VP of Sales,Miami,MA,Event
 John,Doe,user96@webmail.io,555-777-9881,555-534-2994,Quantum Leap Co,Analyst,Phoenix,CO,Advertisement
 Liam,Khan,user97@businessmail.com,555-239-4729,555-253-6279,Blue Ocean Tech,CEO,Austin,NY,Partner
 Jane,Doe,user98@businessmail.io,555-519-4213,555-698-3618,Tech Solutions,Product Owner,Austin,WA,Advertisement

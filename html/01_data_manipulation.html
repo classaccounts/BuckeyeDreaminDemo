@@ -7549,7 +7549,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [161]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -7589,7 +7589,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [162]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_accounts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../datasets/accounts.csv'</span><span class="p">)</span> <span class="c1">#you can specify delimeter, encoding and other parameters in the read_csv function.</span>
@@ -7633,12 +7633,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cce72a4b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cce72a4b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [163]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">row_counts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
@@ -7648,62 +7648,6 @@ a.anchor-link {
 <span class="n">display</span><span class="p">(</span><span class="n">row_counts</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">df_accounts</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>Accounts</th>
-<th>Contacts</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>21</td>
-<td>100</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>AccountName     21
-Industry        21
-Type            21
-Rating          21
-BillingCity     21
-BillingState    21
-Website         21
-Phone           21
-dtype: int64</pre>
 </div>
 </div>
 </div>
@@ -7719,250 +7663,18 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=eea4d81d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=eea4d81d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [164]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df_contacts</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span> <span class="c1"># Descriptive statistics for numerical columns</span>
 <span class="n">display</span><span class="p">(</span><span class="n">df_contacts</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="c1">#get some sample data, specify the number of rows you want to sample</span>
 <span class="n">display</span><span class="p">(</span><span class="n">df_accounts</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span> <span class="c1">#get the first 3 rows of the dataframe, you can alos get the last by using tail()</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>FirstName</th>
-<th>LastName</th>
-<th>Email</th>
-<th>Phone</th>
-<th>MobilePhone</th>
-<th>AccountName</th>
-<th>Title</th>
-<th>MailingCity</th>
-<th>MailingState</th>
-<th>LeadSource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>count</th>
-<td>100</td>
-<td>100</td>
-<td>100</td>
-<td>100</td>
-<td>100</td>
-<td>100</td>
-<td>100</td>
-<td>100</td>
-<td>100</td>
-<td>100</td>
-</tr>
-<tr>
-<th>unique</th>
-<td>10</td>
-<td>10</td>
-<td>96</td>
-<td>100</td>
-<td>100</td>
-<td>20</td>
-<td>10</td>
-<td>10</td>
-<td>9</td>
-<td>6</td>
-</tr>
-<tr>
-<th>top</th>
-<td>Liam</td>
-<td>Smith</td>
-<td>user12@mailservice.org</td>
-<td>555-813-6931</td>
-<td>555-553-8435</td>
-<td>Startup Inc</td>
-<td>CEO</td>
-<td>Miami</td>
-<td>CA</td>
-<td>Trade Show</td>
-</tr>
-<tr>
-<th>freq</th>
-<td>15</td>
-<td>14</td>
-<td>3</td>
-<td>1</td>
-<td>1</td>
-<td>10</td>
-<td>13</td>
-<td>16</td>
-<td>23</td>
-<td>21</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>FirstName</th>
-<th>LastName</th>
-<th>Email</th>
-<th>Phone</th>
-<th>MobilePhone</th>
-<th>AccountName</th>
-<th>Title</th>
-<th>MailingCity</th>
-<th>MailingState</th>
-<th>LeadSource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>10</th>
-<td>Olivia</td>
-<td>Lee</td>
-<td>user10@webmail.co</td>
-<td>555-483-6129</td>
-<td>555-970-5444</td>
-<td>Crimson Peak Solutions</td>
-<td>CTO</td>
-<td>Denver</td>
-<td>FL</td>
-<td>Web</td>
-</tr>
-<tr>
-<th>59</th>
-<td>Liam</td>
-<td>Smith</td>
-<td>user59@mycompany.co</td>
-<td>555-628-1515</td>
-<td>555-423-5739</td>
-<td>Green Horizon Ltd</td>
-<td>Marketing Director</td>
-<td>San Francisco</td>
-<td>WA</td>
-<td>Referral</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>AccountName</th>
-<th>Industry</th>
-<th>Type</th>
-<th>Rating</th>
-<th>BillingCity</th>
-<th>BillingState</th>
-<th>Website</th>
-<th>Phone</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>Blue Ocean Tech</td>
-<td>Healthcare</td>
-<td>Vendor</td>
-<td>Hot</td>
-<td>San Francisco</td>
-<td>WA</td>
-<td>www.blueoceantech.com</td>
-<td>555-410-9237</td>
-</tr>
-<tr>
-<th>1</th>
-<td>Acme Corp</td>
-<td>Manufacturing</td>
-<td>Partner</td>
-<td>Warm</td>
-<td>Los Angeles</td>
-<td>CO</td>
-<td>www.acmecorp.com</td>
-<td>555-141-7084</td>
-</tr>
-<tr>
-<th>2</th>
-<td>Tech Solutions</td>
-<td>Technology</td>
-<td>Vendor</td>
-<td>Hot</td>
-<td>Miami</td>
-<td>FL</td>
-<td>www.techsolutions.com</td>
-<td>555-624-8599</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>
@@ -7978,115 +7690,17 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7a982349">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7a982349">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [165]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">vendors</span> <span class="o">=</span> <span class="n">df_accounts</span><span class="p">[</span><span class="n">df_accounts</span><span class="p">[</span><span class="s1">'Type'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Vendor'</span><span class="p">]</span>
 <span class="n">display</span><span class="p">(</span><span class="n">vendors</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>AccountName</th>
-<th>Industry</th>
-<th>Type</th>
-<th>Rating</th>
-<th>BillingCity</th>
-<th>BillingState</th>
-<th>Website</th>
-<th>Phone</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>Blue Ocean Tech</td>
-<td>Healthcare</td>
-<td>Vendor</td>
-<td>Hot</td>
-<td>San Francisco</td>
-<td>WA</td>
-<td>www.blueoceantech.com</td>
-<td>555-410-9237</td>
-</tr>
-<tr>
-<th>2</th>
-<td>Tech Solutions</td>
-<td>Technology</td>
-<td>Vendor</td>
-<td>Hot</td>
-<td>Miami</td>
-<td>FL</td>
-<td>www.techsolutions.com</td>
-<td>555-624-8599</td>
-</tr>
-<tr>
-<th>5</th>
-<td>Green Horizon Ltd</td>
-<td>Manufacturing</td>
-<td>Vendor</td>
-<td>Warm</td>
-<td>New York</td>
-<td>MA</td>
-<td>www.greenhorizonltd.com</td>
-<td>555-364-1884</td>
-</tr>
-<tr>
-<th>8</th>
-<td>Crimson Peak Solutions</td>
-<td>Technology</td>
-<td>Vendor</td>
-<td>Warm</td>
-<td>Miami</td>
-<td>FL</td>
-<td>www.crimsonpeaksolutions.com</td>
-<td>555-710-6370</td>
-</tr>
-<tr>
-<th>12</th>
-<td>Silverline Systems</td>
-<td>Manufacturing</td>
-<td>Vendor</td>
-<td>Cold</td>
-<td>San Francisco</td>
-<td>AZ</td>
-<td>www.silverlinesystems.com</td>
-<td>555-493-8297</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>
@@ -8102,79 +7716,17 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=90a2e9b9">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=90a2e9b9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [166]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">vendors</span> <span class="o">=</span> <span class="n">df_accounts</span><span class="p">[</span><span class="n">df_accounts</span><span class="p">[</span><span class="s1">'Type'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Vendor'</span><span class="p">][[</span><span class="s1">'AccountName'</span><span class="p">,</span> <span class="s1">'Industry'</span><span class="p">]]</span>
 <span class="n">display</span><span class="p">(</span><span class="n">vendors</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>AccountName</th>
-<th>Industry</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>Blue Ocean Tech</td>
-<td>Healthcare</td>
-</tr>
-<tr>
-<th>2</th>
-<td>Tech Solutions</td>
-<td>Technology</td>
-</tr>
-<tr>
-<th>5</th>
-<td>Green Horizon Ltd</td>
-<td>Manufacturing</td>
-</tr>
-<tr>
-<th>8</th>
-<td>Crimson Peak Solutions</td>
-<td>Technology</td>
-</tr>
-<tr>
-<th>12</th>
-<td>Silverline Systems</td>
-<td>Manufacturing</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>
@@ -8190,33 +7742,17 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=16981b10">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=16981b10">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [167]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">merged</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_contacts</span><span class="p">,</span> <span class="n">df_accounts</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">"AccountName"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"left"</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">merged</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Index(['FirstName', 'LastName', 'Email', 'Phone_x', 'MobilePhone',
-       'AccountName', 'Title', 'MailingCity', 'MailingState', 'LeadSource',
-       'Industry', 'Type', 'Rating', 'BillingCity', 'BillingState', 'Website',
-       'Phone_y'],
-      dtype='object')</pre>
 </div>
 </div>
 </div>
@@ -8232,12 +7768,12 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=df9af0b4">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=df9af0b4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [168]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Filter based on regex</span>
@@ -8248,130 +7784,12 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\JackMcHugh\AppData\Local\Temp\ipykernel_23136\1712298325.py:3: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
-  df_contacts[df_contacts["Title"].str.contains(r"\b(VP|Vice President|Director|Head)\b", case=False, na=False)][0:5]
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[168]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>FirstName</th>
-<th>LastName</th>
-<th>Email</th>
-<th>Phone</th>
-<th>MobilePhone</th>
-<th>AccountName</th>
-<th>Title</th>
-<th>MailingCity</th>
-<th>MailingState</th>
-<th>LeadSource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>4</th>
-<td>Marcus</td>
-<td>Williams</td>
-<td>user4@mycompany.co</td>
-<td>555-390-1983</td>
-<td>555-131-2833</td>
-<td>Silverline Systems</td>
-<td>VP of Sales</td>
-<td>Miami</td>
-<td>CO</td>
-<td>Web</td>
-</tr>
-<tr>
-<th>6</th>
-<td>Olivia</td>
-<td>Garcia</td>
-<td>user6@businessmail.org</td>
-<td>555-938-2796</td>
-<td>555-483-5395</td>
-<td>Silverline Systems</td>
-<td>Marketing Director</td>
-<td>Miami</td>
-<td>MA</td>
-<td>Trade Show</td>
-</tr>
-<tr>
-<th>20</th>
-<td>Liam</td>
-<td>Brown</td>
-<td>user20@mailservice.co</td>
-<td>555-652-2549</td>
-<td>555-705-1008</td>
-<td>Cobalt Ridge Solutions</td>
-<td>Marketing Director</td>
-<td>Austin</td>
-<td>CA</td>
-<td>Advertisement</td>
-</tr>
-<tr>
-<th>25</th>
-<td>John</td>
-<td>Brown</td>
-<td>user25@mailservice.com</td>
-<td>555-336-9180</td>
-<td>555-373-1652</td>
-<td>Startup Inc</td>
-<td>Marketing Director</td>
-<td>Chicago</td>
-<td>MA</td>
-<td>Partner</td>
-</tr>
-<tr>
-<th>31</th>
-<td>Olivia</td>
-<td>Khan</td>
-<td>user12@mailservice.org</td>
-<td>555-384-6843</td>
-<td>555-785-6400</td>
-<td>Silverline Systems</td>
-<td>Marketing Director</td>
-<td>Austin</td>
-<td>TX</td>
-<td>Advertisement</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=fd20a0dd">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fd20a0dd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [169]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Hot Leads in Tech/Finance in CA/NY, in excel it needs multiple IF or FILTER functions, hard to maintain.</span>
@@ -8386,144 +7804,12 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[169]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>FirstName</th>
-<th>LastName</th>
-<th>Email</th>
-<th>Phone_x</th>
-<th>MobilePhone</th>
-<th>AccountName</th>
-<th>Title</th>
-<th>MailingCity</th>
-<th>MailingState</th>
-<th>LeadSource</th>
-<th>Industry</th>
-<th>Type</th>
-<th>Rating</th>
-<th>BillingCity</th>
-<th>BillingState</th>
-<th>Website</th>
-<th>Phone_y</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>26</th>
-<td>John</td>
-<td>Smith</td>
-<td>user26@mailservice.com</td>
-<td>555-168-5681</td>
-<td>555-413-4353</td>
-<td>Quantum Leap Co</td>
-<td>Developer</td>
-<td>Austin</td>
-<td>CA</td>
-<td>Partner</td>
-<td>Technology</td>
-<td>Vendor</td>
-<td>Hot</td>
-<td>Chicago</td>
-<td>MA</td>
-<td>www.quantumleapco.com</td>
-<td>555-275-6808</td>
-</tr>
-<tr>
-<th>29</th>
-<td>Sophia</td>
-<td>Garcia</td>
-<td>user12@mailservice.org</td>
-<td>555-138-2612</td>
-<td>555-903-2700</td>
-<td>Pinnacle Consulting</td>
-<td>CTO</td>
-<td>New York</td>
-<td>CA</td>
-<td>Trade Show</td>
-<td>Technology</td>
-<td>Customer</td>
-<td>Hot</td>
-<td>Miami</td>
-<td>MA</td>
-<td>www.pinnacleconsulting.com</td>
-<td>555-362-2267</td>
-</tr>
-<tr>
-<th>51</th>
-<td>Daniel</td>
-<td>Ramirez</td>
-<td>user51@businessmail.org</td>
-<td>555-479-4400</td>
-<td>555-535-3757</td>
-<td>Quantum Leap Co</td>
-<td>CTO</td>
-<td>Austin</td>
-<td>CA</td>
-<td>Trade Show</td>
-<td>Technology</td>
-<td>Vendor</td>
-<td>Hot</td>
-<td>Chicago</td>
-<td>MA</td>
-<td>www.quantumleapco.com</td>
-<td>555-275-6808</td>
-</tr>
-<tr>
-<th>62</th>
-<td>Jane</td>
-<td>Jones</td>
-<td>user62@mailservice.net</td>
-<td>555-544-2881</td>
-<td>555-882-3939</td>
-<td>CloudNine Ventures</td>
-<td>Developer</td>
-<td>Miami</td>
-<td>NY</td>
-<td>Trade Show</td>
-<td>Finance</td>
-<td>Customer</td>
-<td>Hot</td>
-<td>Phoenix</td>
-<td>IL</td>
-<td>www.cloudnineventures.com</td>
-<td>555-420-9488</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2b9cda2d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2b9cda2d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [170]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Group by AccountName and aggregate with custom function</span>
@@ -8536,79 +7822,12 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[170]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>FirstName</th>
-<th>Rating</th>
-</tr>
-<tr>
-<th>AccountName</th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>Acme Corp</th>
-<td>6</td>
-<td>Warm</td>
-</tr>
-<tr>
-<th>Blue Ocean Tech</th>
-<td>3</td>
-<td>Hot</td>
-</tr>
-<tr>
-<th>BrightPath Inc</th>
-<td>4</td>
-<td>Warm</td>
-</tr>
-<tr>
-<th>CloudNine Ventures</th>
-<td>3</td>
-<td>Hot</td>
-</tr>
-<tr>
-<th>Cobalt Ridge Solutions</th>
-<td>4</td>
-<td>Hot</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f2917ca0">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f2917ca0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [172]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This line calculates the percentage of each account rating within every region, reshapes it into a table, and fills in any missing values with zeros.</span>
@@ -8626,74 +7845,6 @@ dtype: int64</pre>
 <span class="n">region_leads</span> <span class="o">=</span> <span class="n">df_accounts</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"Region"</span><span class="p">)[</span><span class="s2">"Rating"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">region_leads</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[172]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th>Rating</th>
-<th>Cold</th>
-<th>Hot</th>
-<th>Warm</th>
-</tr>
-<tr>
-<th>Region</th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>Northeast</th>
-<td>0.000000</td>
-<td>0.400000</td>
-<td>0.600000</td>
-</tr>
-<tr>
-<th>Other</th>
-<td>0.222222</td>
-<td>0.444444</td>
-<td>0.333333</td>
-</tr>
-<tr>
-<th>South</th>
-<td>0.000000</td>
-<td>0.666667</td>
-<td>0.333333</td>
-</tr>
-<tr>
-<th>West</th>
-<td>0.500000</td>
-<td>0.250000</td>
-<td>0.250000</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>
@@ -8840,7 +7991,7 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f256d7a9">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f256d7a9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8852,116 +8003,6 @@ dtype: int64</pre>
 <span class="n">df_contacts</span> <span class="o">=</span> <span class="n">df_contacts</span><span class="p">[</span><span class="n">df_contacts</span><span class="p">[</span><span class="s1">'Email'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'emma.smith@example.com'</span><span class="p">]</span>
 <span class="n">display</span><span class="p">(</span><span class="n">df_contacts</span><span class="o">.</span><span class="n">tail</span><span class="p">())</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>FirstName</th>
-<th>LastName</th>
-<th>Email</th>
-<th>ContactPhone</th>
-<th>MobilePhone</th>
-<th>AccountName</th>
-<th>Title</th>
-<th>MailingCity</th>
-<th>MailingState</th>
-<th>LeadSource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>95</th>
-<td>Daniel</td>
-<td>Garcia</td>
-<td>user95@webmail.com</td>
-<td>555-925-3202</td>
-<td>555-357-8386</td>
-<td>BrightPath Inc</td>
-<td>VP of Sales</td>
-<td>Miami</td>
-<td>MA</td>
-<td>Event</td>
-</tr>
-<tr>
-<th>96</th>
-<td>John</td>
-<td>Doe</td>
-<td>user96@webmail.io</td>
-<td>555-777-9881</td>
-<td>555-534-2994</td>
-<td>Quantum Leap Co</td>
-<td>Analyst</td>
-<td>Phoenix</td>
-<td>CO</td>
-<td>Advertisement</td>
-</tr>
-<tr>
-<th>97</th>
-<td>Liam</td>
-<td>Khan</td>
-<td>user97@businessmail.com</td>
-<td>555-239-4729</td>
-<td>555-253-6279</td>
-<td>Blue Ocean Tech</td>
-<td>CEO</td>
-<td>Austin</td>
-<td>NY</td>
-<td>Partner</td>
-</tr>
-<tr>
-<th>98</th>
-<td>Jane</td>
-<td>Doe</td>
-<td>user98@businessmail.io</td>
-<td>555-519-4213</td>
-<td>555-698-3618</td>
-<td>Tech Solutions</td>
-<td>Product Owner</td>
-<td>Austin</td>
-<td>WA</td>
-<td>Advertisement</td>
-</tr>
-<tr>
-<th>99</th>
-<td>Jane</td>
-<td>Smith</td>
-<td>user99@webmail.net</td>
-<td>555-650-4097</td>
-<td>555-891-5959</td>
-<td>NextPhase Digital</td>
-<td>Product Owner</td>
-<td>Denver</td>
-<td>FL</td>
-<td>Referral</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>
@@ -8982,7 +8023,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [173]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_contacts</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'../datasets/contacts_export.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -9038,7 +8079,7 @@ dtype: int64</pre>
     ]
   }
 }
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=37205d8b">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=37205d8b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9046,7 +8087,11 @@ dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../datasets/accounts.json'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># The first flat.update merges all key-value pairs from the 'details' dictionary into flat.</span>
+<span class="c1"># The second flat.update adds location info, prefixing keys with 'Billing' (e.g., 'BillingCity', 'BillingState').</span>
+<span class="c1"># The third flat.update merges all key-value pairs from the 'contact' dictionary into flat.</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../datasets/accounts.json'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 
 <span class="n">accounts</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'organization'</span><span class="p">][</span><span class="s1">'accounts'</span><span class="p">]</span>
@@ -9056,7 +8101,7 @@ dtype: int64</pre>
     <span class="n">account</span> <span class="o">=</span> <span class="n">entry</span><span class="p">[</span><span class="s1">'account'</span><span class="p">]</span>
     <span class="n">flat</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">flat</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">account</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'details'</span><span class="p">,</span> <span class="p">{}))</span>
-    <span class="n">flat</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="sa">f</span><span class="s2">"Billing</span><span class="si">{</span><span class="n">key</span><span class="p">[</span><span class="mi">7</span><span class="p">:]</span><span class="si">}</span><span class="s2">"</span><span class="p">:</span> <span class="n">val</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">account</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'location'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">items</span><span class="p">()})</span>
+    <span class="n">flat</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">account</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'location'</span><span class="p">,</span> <span class="p">{}))</span>
     <span class="n">flat</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">account</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'contact'</span><span class="p">,</span> <span class="p">{}))</span>
     <span class="n">flat_accounts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">flat</span><span class="p">)</span>
 
@@ -9067,105 +8112,7 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>AccountName</th>
-<th>Industry</th>
-<th>Type</th>
-<th>Rating</th>
-<th>BillingCity</th>
-<th>BillingState</th>
-<th>Phone</th>
-<th>Website</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>Blue Ocean Tech</td>
-<td>Healthcare</td>
-<td>Vendor</td>
-<td>Hot</td>
-<td>San Francisco</td>
-<td>WA</td>
-<td>555-410-9237</td>
-<td>www.blueoceantech.com</td>
-</tr>
-<tr>
-<th>1</th>
-<td>Acme Corp</td>
-<td>Manufacturing</td>
-<td>Partner</td>
-<td>Warm</td>
-<td>Los Angeles</td>
-<td>CO</td>
-<td>555-141-7084</td>
-<td>www.acmecorp.com</td>
-</tr>
-<tr>
-<th>2</th>
-<td>Tech Solutions</td>
-<td>Technology</td>
-<td>Vendor</td>
-<td>Hot</td>
-<td>Miami</td>
-<td>FL</td>
-<td>555-624-8599</td>
-<td>www.techsolutions.com</td>
-</tr>
-<tr>
-<th>3</th>
-<td>Globex Corporation</td>
-<td>Manufacturing</td>
-<td>Partner</td>
-<td>Hot</td>
-<td>Boston</td>
-<td>AZ</td>
-<td>555-368-3779</td>
-<td>www.globexcorporation.com</td>
-</tr>
-<tr>
-<th>4</th>
-<td>Startup Inc</td>
-<td>Healthcare</td>
-<td>Customer</td>
-<td>Cold</td>
-<td>Austin</td>
-<td>IL</td>
-<td>555-424-1792</td>
-<td>www.startupinc.com</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=50b2e6e1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=50b2e6e1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9199,45 +8146,7 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[
-  {
-    "AccountName": "Blue Ocean Tech",
-    "Industry": "Healthcare",
-    "Type": "Vendor",
-    "Rating": "Hot",
-    "BillingCity": "San Francisco",
-    "BillingState": "WA",
-    "contact": {
-      "Phone": "555-410-9237",
-      "Website": "www.blueoceantech.com"
-    }
-  },
-  {
-    "AccountName": "Acme Corp",
-    "Industry": "Manufacturing",
-    "Type": "Partner",
-    "Rating": "Warm",
-    "BillingCity": "Los Angeles",
-    "BillingState": "CO",
-    "contact": {
-      "Phone": "555-141-7084",
-      "Website": "www.acmecorp.com"
-    }
-  }
-]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0004a217">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0004a217">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9263,56 +8172,6 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>AccountName</th>
-<th>Match</th>
-<th>Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>OmniTech Global</td>
-<td>Global OmniTech</td>
-<td>95</td>
-</tr>
-<tr>
-<th>1</th>
-<td>Global OmniTech</td>
-<td>OmniTech Global</td>
-<td>95</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3ee98d08">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -9324,108 +8183,17 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c6cff0fc">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=36693ea5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [177]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-<span class="n">notebook_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">getoutput</span><span class="p">(</span><span class="s1">'echo $PWD'</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s1">'/'</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">getoutput</span><span class="p">(</span><span class="s1">'echo $PWD'</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s1">'.ipynb'</span>
-<span class="n">notebook_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">getoutput</span><span class="p">(</span><span class="s1">'ls *.ipynb'</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s1">'pdfs'</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s1">'html'</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="sa">f</span><span class="s1">'jupyter nbconvert --to html "</span><span class="si">{</span><span class="n">notebook_file</span><span class="si">}</span><span class="s1">" --output "html/</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">notebook_file</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">"'</span><span class="p">)</span>
-<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="sa">f</span><span class="s1">'jupyter nbconvert --to pdf "</span><span class="si">{</span><span class="n">notebook_file</span><span class="si">}</span><span class="s1">" --output "pdfs/</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">notebook_file</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">"'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span><span class="s2">"01_data_manipulation.ipynb"</span><span class="w"> </span>--output-dir<span class="o">=</span>../html
+<span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>script<span class="w"> </span><span class="s2">"01_data_manipulation.ipynb"</span><span class="w"> </span>--output-dir<span class="o">=</span>../pdfs
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>usage: jupyter [-h] [--version] [--config-dir] [--data-dir] [--runtime-dir]
-               [--paths] [--json] [--debug]
-               [subcommand]
-
-Jupyter: Interactive Computing
-
-positional arguments:
-  subcommand     the subcommand to launch
-
-options:
-  -h, --help     show this help message and exit
-  --version      show the versions of core jupyter packages and exit
-  --config-dir   show Jupyter config dir
-  --data-dir     show Jupyter data dir
-  --runtime-dir  show Jupyter runtime dir
-  --paths        show all Jupyter paths. Add --json for machine-readable
-                 format.
-  --json         output paths as machine-readable json
-  --debug        output debug information about paths
-
-Available subcommands: kernel kernelspec migrate run troubleshoot
-
-Jupyter command `jupyter-nbconvert` not found.
-usage: jupyter [-h] [--version] [--config-dir] [--data-dir] [--runtime-dir]
-               [--paths] [--json] [--debug]
-               [subcommand]
-
-Jupyter: Interactive Computing
-
-positional arguments:
-  subcommand     the subcommand to launch
-
-options:
-  -h, --help     show this help message and exit
-  --version      show the versions of core jupyter packages and exit
-  --config-dir   show Jupyter config dir
-  --data-dir     show Jupyter data dir
-  --runtime-dir  show Jupyter runtime dir
-  --paths        show all Jupyter paths. Add --json for machine-readable
-                 format.
-  --json         output paths as machine-readable json
-  --debug        output debug information about paths
-
-Available subcommands: kernel kernelspec migrate run troubleshoot
-
-Jupyter command `jupyter-nbconvert` not found.
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=36693ea5">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [181]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>get_ipython<span class="o">()</span>.system<span class="o">(</span><span class="s1">'jupyter nbconvert --to html 01_data_manipulation.ipynb'</span><span class="o">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>'get_ipython' is not recognized as an internal or external command,
-operable program or batch file.
-</pre>
 </div>
 </div>
 </div>

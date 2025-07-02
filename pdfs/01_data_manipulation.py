@@ -9,7 +9,7 @@
 
 # ### Imports
 
-# In[161]:
+# In[ ]:
 
 
 import pandas as pd
@@ -25,7 +25,7 @@ from fuzzywuzzy import process
 # 
 # Let's load some data!
 
-# In[162]:
+# In[ ]:
 
 
 df_accounts = pd.read_csv('../datasets/accounts.csv') #you can specify delimeter, encoding and other parameters in the read_csv function.
@@ -39,7 +39,7 @@ df_accounts_excel = pd.read_excel('../datasets/accounts_excel.xlsx', sheet_name=
 
 # Let's count some rows
 
-# In[163]:
+# In[ ]:
 
 
 row_counts = pd.DataFrame({
@@ -52,7 +52,7 @@ display(df_accounts.count())
 
 # We can desribe the data using this method along with getting some sample data.
 
-# In[164]:
+# In[ ]:
 
 
 display(df_contacts.describe()) # Descriptive statistics for numerical columns
@@ -62,7 +62,7 @@ display(df_accounts.head(3)) #get the first 3 rows of the dataframe, you can alo
 
 # Filter rows by value, we are creating a new dataframe here, the original one is not modified
 
-# In[165]:
+# In[ ]:
 
 
 vendors = df_accounts[df_accounts['Type'] == 'Vendor']
@@ -71,7 +71,7 @@ display(vendors[0:5])
 
 # Select only certain columns to be used in a dataframe
 
-# In[166]:
+# In[ ]:
 
 
 vendors = df_accounts[df_accounts['Type'] == 'Vendor'][['AccountName', 'Industry']]
@@ -80,7 +80,7 @@ display(vendors[0:5])
 
 # Before going further lets join these datasets together, this will be the easiest merge you will likely ever deal with haha
 
-# In[167]:
+# In[ ]:
 
 
 merged = pd.merge(df_contacts, df_accounts, on="AccountName", how="left")
@@ -89,7 +89,7 @@ display(merged.columns)
 
 # Let's get creative and query the in ways that SOQL or Excel may have trouble doing.
 
-# In[168]:
+# In[ ]:
 
 
 #Filter based on regex
@@ -97,7 +97,7 @@ display(merged.columns)
 df_contacts[df_contacts["Title"].str.contains(r"\b(VP|Vice President|Director|Head)\b", case=False, na=False)][0:5]
 
 
-# In[169]:
+# In[ ]:
 
 
 # Hot Leads in Tech/Finance in CA/NY, in excel it needs multiple IF or FILTER functions, hard to maintain.
@@ -109,7 +109,7 @@ merged[
 ]
 
 
-# In[170]:
+# In[ ]:
 
 
 #Group by AccountName and aggregate with custom function
@@ -119,7 +119,7 @@ merged.groupby("AccountName").agg({
 })[0:5]
 
 
-# In[172]:
+# In[ ]:
 
 
 #This line calculates the percentage of each account rating within every region, reshapes it into a table, and fills in any missing values with zeros.
@@ -223,7 +223,7 @@ display(df_contacts.tail())
 
 # ### Export Date to CSV
 
-# In[173]:
+# In[ ]:
 
 
 df_contacts.to_csv('../datasets/contacts_export.csv', index=False)
@@ -261,6 +261,10 @@ df_contacts.to_csv('../datasets/contacts_export.csv', index=False)
 # In[ ]:
 
 
+# The first flat.update merges all key-value pairs from the 'details' dictionary into flat.
+# The second flat.update adds location info, prefixing keys with 'Billing' (e.g., 'BillingCity', 'BillingState').
+# The third flat.update merges all key-value pairs from the 'contact' dictionary into flat.
+
 with open('../datasets/accounts.json') as f:
     data = json.load(f)
 
@@ -271,7 +275,7 @@ for entry in accounts:
     account = entry['account']
     flat = {}
     flat.update(account.get('details', {}))
-    flat.update({f"Billing{key[7:]}": val for key, val in account.get('location', {}).items()})
+    flat.update(account.get('location', {}))
     flat.update(account.get('contact', {}))
     flat_accounts.append(flat)
 
@@ -325,20 +329,9 @@ display(fuzzy_matches_df)
 
 # ## Export Notebook
 
-# In[177]:
+# In[ ]:
 
 
-import os
-notebook_path = os.path.basename(get_ipython().getoutput('echo $PWD')[0]) + '/' + os.path.basename(get_ipython().getoutput('echo $PWD')[0]) + '.ipynb'
-notebook_file = os.path.basename(get_ipython().getoutput('ls *.ipynb')[0])
-os.makedirs('pdfs', exist_ok=True)
-os.makedirs('html', exist_ok=True)
-get_ipython().system(f'jupyter nbconvert --to html "{notebook_file}" --output "html/{os.path.splitext(notebook_file)[0]}"')
-get_ipython().system(f'jupyter nbconvert --to pdf "{notebook_file}" --output "pdfs/{os.path.splitext(notebook_file)[0]}"')
-
-
-# In[181]:
-
-
-get_ipython().system("get_ipython().system('jupyter nbconvert --to html 01_data_manipulation.ipynb')")
+get_ipython().system('jupyter nbconvert --to html "01_data_manipulation.ipynb" --output-dir=../html')
+get_ipython().system('jupyter nbconvert --to script "01_data_manipulation.ipynb" --output-dir=../pdfs')
 
