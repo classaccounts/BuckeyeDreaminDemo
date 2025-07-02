@@ -1,0 +1,367 @@
+{
+  "organization": {
+    "name": "SampleOrg",
+    "accounts": [
+      {
+        "account": {
+          "details": {
+            "AccountName": "Blue Ocean Tech",
+            "Industry": "Healthcare",
+            "Type": "Vendor",
+            "Rating": "Hot"
+          },
+          "location": {
+            "BillingCity": "San Francisco",
+            "BillingState": "WA"
+          },
+          "contact": {
+            "Phone": "555-410-9237",
+            "Website": "www.blueoceantech.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "Acme Corp",
+            "Industry": "Manufacturing",
+            "Type": "Partner",
+            "Rating": "Warm"
+          },
+          "location": {
+            "BillingCity": "Los Angeles",
+            "BillingState": "CO"
+          },
+          "contact": {
+            "Phone": "555-141-7084",
+            "Website": "www.acmecorp.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "Tech Solutions",
+            "Industry": "Technology",
+            "Type": "Vendor",
+            "Rating": "Hot"
+          },
+          "location": {
+            "BillingCity": "Miami",
+            "BillingState": "FL"
+          },
+          "contact": {
+            "Phone": "555-624-8599",
+            "Website": "www.techsolutions.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "Globex Corporation",
+            "Industry": "Manufacturing",
+            "Type": "Partner",
+            "Rating": "Hot"
+          },
+          "location": {
+            "BillingCity": "Boston",
+            "BillingState": "AZ"
+          },
+          "contact": {
+            "Phone": "555-368-3779",
+            "Website": "www.globexcorporation.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "Startup Inc",
+            "Industry": "Healthcare",
+            "Type": "Customer",
+            "Rating": "Cold"
+          },
+          "location": {
+            "BillingCity": "Austin",
+            "BillingState": "IL"
+          },
+          "contact": {
+            "Phone": "555-424-1792",
+            "Website": "www.startupinc.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "Green Horizon Ltd",
+            "Industry": "Manufacturing",
+            "Type": "Vendor",
+            "Rating": "Warm"
+          },
+          "location": {
+            "BillingCity": "New York",
+            "BillingState": "MA"
+          },
+          "contact": {
+            "Phone": "555-364-1884",
+            "Website": "www.greenhorizonltd.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "NexGen Innovations",
+            "Industry": "Finance",
+            "Type": "Reseller",
+            "Rating": "Warm"
+          },
+          "location": {
+            "BillingCity": "Seattle",
+            "BillingState": "WA"
+          },
+          "contact": {
+            "Phone": "555-138-9407",
+            "Website": "www.nexgeninnovations.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "Skyline Enterprises",
+            "Industry": "Manufacturing",
+            "Type": "Customer",
+            "Rating": "Warm"
+          },
+          "location": {
+            "BillingCity": "Chicago",
+            "BillingState": "NY"
+          },
+          "contact": {
+            "Phone": "555-965-8484",
+            "Website": "www.skylineenterprises.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "Crimson Peak Solutions",
+            "Industry": "Technology",
+            "Type": "Vendor",
+            "Rating": "Warm"
+          },
+          "location": {
+            "BillingCity": "Miami",
+            "BillingState": "FL"
+          },
+          "contact": {
+            "Phone": "555-710-6370",
+            "Website": "www.crimsonpeaksolutions.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "BrightPath Inc",
+            "Industry": "Finance",
+            "Type": "Prospect",
+            "Rating": "Warm"
+          },
+          "location": {
+            "BillingCity": "Los Angeles",
+            "BillingState": "NY"
+          },
+          "contact": {
+            "Phone": "555-346-6426",
+            "Website": "www.brightpathinc.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "OmniTech Global",
+            "Industry": "Manufacturing",
+            "Type": "Reseller",
+            "Rating": "Hot"
+          },
+          "location": {
+            "BillingCity": "Austin",
+            "BillingState": "IL"
+          },
+          "contact": {
+            "Phone": "555-184-5259",
+            "Website": "www.omnitechglobal.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "Silverline Systems",
+            "Industry": "Manufacturing",
+            "Type": "Vendor",
+            "Rating": "Cold"
+          },
+          "location": {
+            "BillingCity": "San Francisco",
+            "BillingState": "AZ"
+          },
+          "contact": {
+            "Phone": "555-493-8297",
+            "Website": "www.silverlinesystems.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "Vertex Dynamics",
+            "Industry": "Finance",
+            "Type": "Customer",
+            "Rating": "Warm"
+          },
+          "location": {
+            "BillingCity": "San Francisco",
+            "BillingState": "CO"
+          },
+          "contact": {
+            "Phone": "555-272-5241",
+            "Website": "www.vertexdynamics.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "Quantum Leap Co",
+            "Industry": "Technology",
+            "Type": "Vendor",
+            "Rating": "Hot"
+          },
+          "location": {
+            "BillingCity": "Chicago",
+            "BillingState": "MA"
+          },
+          "contact": {
+            "Phone": "555-275-6808",
+            "Website": "www.quantumleapco.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "NovaCore Technologies",
+            "Industry": "Manufacturing",
+            "Type": "Vendor",
+            "Rating": "Cold"
+          },
+          "location": {
+            "BillingCity": "Phoenix",
+            "BillingState": "CA"
+          },
+          "contact": {
+            "Phone": "555-539-1873",
+            "Website": "www.novacoretechnologies.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "Pinnacle Consulting",
+            "Industry": "Technology",
+            "Type": "Customer",
+            "Rating": "Hot"
+          },
+          "location": {
+            "BillingCity": "Miami",
+            "BillingState": "MA"
+          },
+          "contact": {
+            "Phone": "555-362-2267",
+            "Website": "www.pinnacleconsulting.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "HarborView Analytics",
+            "Industry": "Manufacturing",
+            "Type": "Reseller",
+            "Rating": "Warm"
+          },
+          "location": {
+            "BillingCity": "Phoenix",
+            "BillingState": "IL"
+          },
+          "contact": {
+            "Phone": "555-240-1168",
+            "Website": "www.harborviewanalytics.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "NextPhase Digital",
+            "Industry": "Manufacturing",
+            "Type": "Reseller",
+            "Rating": "Cold"
+          },
+          "location": {
+            "BillingCity": "Phoenix",
+            "BillingState": "CA"
+          },
+          "contact": {
+            "Phone": "555-148-5971",
+            "Website": "www.nextphasedigital.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "CloudNine Ventures",
+            "Industry": "Finance",
+            "Type": "Customer",
+            "Rating": "Hot"
+          },
+          "location": {
+            "BillingCity": "Phoenix",
+            "BillingState": "IL"
+          },
+          "contact": {
+            "Phone": "555-420-9488",
+            "Website": "www.cloudnineventures.com"
+          }
+        }
+      },
+      {
+        "account": {
+          "details": {
+            "AccountName": "Cobalt Ridge Solutions",
+            "Industry": "Healthcare",
+            "Type": "Vendor",
+            "Rating": "Hot"
+          },
+          "location": {
+            "BillingCity": "Miami",
+            "BillingState": "TX"
+          },
+          "contact": {
+            "Phone": "555-707-5571",
+            "Website": "www.cobaltridgesolutions.com"
+          }
+        }
+      }
+    ]
+  }
+}

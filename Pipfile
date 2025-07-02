@@ -8,6 +8,10 @@ pandas = "*"
 ipykernel = "*"
 simple-salesforce = "*"
 dotenv = "*"
+openpyxl = "*"
+fuzzywuzzy = "*"
+python-levenshtein = "*"
+jupyter = "*"
 
 [dev-packages]
 
