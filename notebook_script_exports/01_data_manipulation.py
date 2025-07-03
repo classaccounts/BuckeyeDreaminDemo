@@ -9,7 +9,7 @@
 
 # ### Imports
 
-# In[ ]:
+# In[1]:
 
 
 import pandas as pd
@@ -25,7 +25,7 @@ from fuzzywuzzy import process
 # 
 # Let's load some data!
 
-# In[ ]:
+# In[2]:
 
 
 df_accounts = pd.read_csv('../datasets/accounts.csv') #you can specify delimeter, encoding and other parameters in the read_csv function.
@@ -39,7 +39,7 @@ df_accounts_excel = pd.read_excel('../datasets/accounts_excel.xlsx', sheet_name=
 
 # Let's count some rows
 
-# In[ ]:
+# In[3]:
 
 
 row_counts = pd.DataFrame({
@@ -52,7 +52,7 @@ display(df_accounts.count())
 
 # We can desribe the data using this method along with getting some sample data.
 
-# In[ ]:
+# In[4]:
 
 
 display(df_contacts.describe()) # Descriptive statistics for numerical columns
@@ -62,7 +62,7 @@ display(df_accounts.head(3)) #get the first 3 rows of the dataframe, you can alo
 
 # Filter rows by value, we are creating a new dataframe here, the original one is not modified
 
-# In[ ]:
+# In[5]:
 
 
 vendors = df_accounts[df_accounts['Type'] == 'Vendor']
@@ -71,7 +71,7 @@ display(vendors[0:5])
 
 # Select only certain columns to be used in a dataframe
 
-# In[ ]:
+# In[6]:
 
 
 vendors = df_accounts[df_accounts['Type'] == 'Vendor'][['AccountName', 'Industry']]
@@ -80,7 +80,7 @@ display(vendors[0:5])
 
 # Before going further lets join these datasets together, this will be the easiest merge you will likely ever deal with haha
 
-# In[ ]:
+# In[7]:
 
 
 merged = pd.merge(df_contacts, df_accounts, on="AccountName", how="left")
@@ -89,7 +89,7 @@ display(merged.columns)
 
 # Let's get creative and query the in ways that SOQL or Excel may have trouble doing.
 
-# In[ ]:
+# In[8]:
 
 
 #Filter based on regex
@@ -97,7 +97,7 @@ display(merged.columns)
 df_contacts[df_contacts["Title"].str.contains(r"\b(VP|Vice President|Director|Head)\b", case=False, na=False)][0:5]
 
 
-# In[ ]:
+# In[9]:
 
 
 # Hot Leads in Tech/Finance in CA/NY, in excel it needs multiple IF or FILTER functions, hard to maintain.
@@ -109,7 +109,7 @@ merged[
 ]
 
 
-# In[ ]:
+# In[10]:
 
 
 #Group by AccountName and aggregate with custom function
@@ -119,7 +119,7 @@ merged.groupby("AccountName").agg({
 })[0:5]
 
 
-# In[ ]:
+# In[11]:
 
 
 #This line calculates the percentage of each account rating within every region, reshapes it into a table, and fills in any missing values with zeros.
@@ -144,7 +144,7 @@ region_leads
 
 # ### DataFrame Mods
 
-# In[ ]:
+# In[12]:
 
 
 # Dropping duplicate emails in contacts dataset
@@ -156,7 +156,7 @@ print('Duplicated emails:')
 print(duplicated_emails)
 
 
-# In[ ]:
+# In[13]:
 
 
 #a simple way to assign a region based on state, however you could do this with a formula field on salesforce, but this is for demo purposes
@@ -174,7 +174,7 @@ df_accounts['Region'] = df_accounts['BillingState'].apply(assign_region)
 df_accounts['Region'][0:3]
 
 
-# In[ ]:
+# In[14]:
 
 
 #replace values
@@ -182,7 +182,7 @@ df_contacts["LeadSource"] = df_contacts["LeadSource"].replace("Trade Show", "Eve
 df_contacts["LeadSource"][0:5]
 
 
-# In[ ]:
+# In[15]:
 
 
 #this is used to rename the columns in a dataframe, inplace means it will change the original dataframe, I do not recommend using inplace 
@@ -193,7 +193,7 @@ df_contacts.rename(columns={
 df_contacts.columns
 
 
-# In[ ]:
+# In[16]:
 
 
 # Example: Add a new contact row to df_contacts
@@ -213,7 +213,7 @@ df_contacts = pd.concat([df_contacts, pd.DataFrame([new_contact])], ignore_index
 display(df_contacts.tail())
 
 
-# In[ ]:
+# In[17]:
 
 
 #Removing a row from a dataframe is simply at matter of exclusion
@@ -223,7 +223,7 @@ display(df_contacts.tail())
 
 # ### Export Date to CSV
 
-# In[ ]:
+# In[18]:
 
 
 df_contacts.to_csv('../datasets/contacts_export.csv', index=False)
@@ -258,7 +258,7 @@ df_contacts.to_csv('../datasets/contacts_export.csv', index=False)
   }
 }
 
-# In[ ]:
+# In[19]:
 
 
 # The first flat.update merges all key-value pairs from the 'details' dictionary into flat.
@@ -283,7 +283,7 @@ df_flat = pd.DataFrame(flat_accounts)
 display(df_flat.head())
 
 
-# In[ ]:
+# In[20]:
 
 
 # output the newly created flat dataframe to a new json structure, all for funzies
@@ -309,7 +309,7 @@ for _, row in subset.iterrows():
 print(json.dumps(output, indent=2))
 
 
-# In[ ]:
+# In[21]:
 
 
 #simple fuzzy matching example using fuzzywuzzy
@@ -329,9 +329,10 @@ display(fuzzy_matches_df)
 
 # ## Export Notebook
 
-# In[ ]:
+# In[23]:
 
 
 get_ipython().system('jupyter nbconvert --to html "01_data_manipulation.ipynb" --output-dir=../html')
-get_ipython().system('jupyter nbconvert --to script "01_data_manipulation.ipynb" --output-dir=../pdfs')
+get_ipython().system('jupyter nbconvert --to script "01_data_manipulation.ipynb" --output-dir=../notebook_script_exports')
+get_ipython().system('jupyter nbconvert --to pdf "01_data_manipulation.ipynb" --output-dir=../pdfs')
 

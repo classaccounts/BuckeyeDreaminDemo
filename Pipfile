@@ -12,6 +12,7 @@ openpyxl = "*"
 fuzzywuzzy = "*"
 python-levenshtein = "*"
 jupyter = "*"
+pandoc = "*"
 
 [dev-packages]
 
