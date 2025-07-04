@@ -13,6 +13,8 @@ fuzzywuzzy = "*"
 python-levenshtein = "*"
 jupyter = "*"
 pandoc = "*"
+openai = "*"
+pydantic = "*"
 
 [dev-packages]
 
