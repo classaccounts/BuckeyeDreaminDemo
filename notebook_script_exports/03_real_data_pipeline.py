@@ -406,7 +406,7 @@ print(fail['sf__Error'])
 
 # This pipeline transforms unstructured bid data into structured records, enriches and deduplicates parts, and inserts both quotes and line items into Salesforce using a mix of REST and Bulk APIs, showing a scalable and automation-friendly approach to external data integration.
 
-# In[ ]:
+# In[204]:
 
 
 get_ipython().system('jupyter nbconvert --to html "03_real_data_pipeline.ipynb" --output-dir=../html')
