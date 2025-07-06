@@ -9,7 +9,7 @@
 
 # ### Imports
 
-# In[1]:
+# In[24]:
 
 
 import pandas as pd
@@ -25,7 +25,7 @@ from fuzzywuzzy import process
 # 
 # Let's load some data!
 
-# In[2]:
+# In[25]:
 
 
 df_accounts = pd.read_csv('../datasets/accounts.csv') #you can specify delimeter, encoding and other parameters in the read_csv function.
@@ -37,9 +37,9 @@ df_accounts_excel = pd.read_excel('../datasets/accounts_excel.xlsx', sheet_name=
 
 # We're going to explore different ways of slicing and dicing data in pandas. This is just the tip of the iceberg. In a programmatic environment, how you manipulate the data is limited only by your imagination.
 
-# Let's count some rows
+# Let's count some rows. This code counts the total number of Account and Contact records in the data, then displays those counts along with a summary of how many values are present in each Account field.
 
-# In[3]:
+# In[26]:
 
 
 row_counts = pd.DataFrame({
@@ -50,9 +50,9 @@ display(row_counts)
 display(df_accounts.count())
 
 
-# We can desribe the data using this method along with getting some sample data.
+# This block displays descriptive statistics for numerical columns in df_contacts, shows 2 random sample rows from df_contacts, and displays the first 3 rows of df_accounts.
 
-# In[4]:
+# In[27]:
 
 
 display(df_contacts.describe()) # Descriptive statistics for numerical columns
@@ -60,36 +60,36 @@ display(df_contacts.sample(2)) #get some sample data, specify the number of rows
 display(df_accounts.head(3)) #get the first 3 rows of the dataframe, you can alos get the last by using tail()
 
 
-# Filter rows by value, we are creating a new dataframe here, the original one is not modified
+# The code block filters the df_accounts DataFrame to include only rows where the 'Type' column is 'Vendor', assigns the result to the vendors DataFrame, and displays the first five rows.
 
-# In[5]:
+# In[28]:
 
 
 vendors = df_accounts[df_accounts['Type'] == 'Vendor']
 display(vendors[0:5])
 
 
-# Select only certain columns to be used in a dataframe
+# This cell selects only the 'AccountName' and 'Industry' columns from vendor accounts in the df_accounts DataFrame and displays the first five rows.
 
-# In[6]:
+# In[29]:
 
 
 vendors = df_accounts[df_accounts['Type'] == 'Vendor'][['AccountName', 'Industry']]
 display(vendors[0:5])
 
 
-# Before going further lets join these datasets together, this will be the easiest merge you will likely ever deal with haha
+# Before going further lets join these datasets together, this will be the easiest merge you will likely ever deal with haha. This cell merges contact and account dataframes on the AccountName field using a left join, keeping all contacts, and then displays the resulting column names.
 
-# In[7]:
+# In[30]:
 
 
 merged = pd.merge(df_contacts, df_accounts, on="AccountName", how="left")
 display(merged.columns)
 
 
-# Let's get creative and query the in ways that SOQL or Excel may have trouble doing.
+# Let's get creative and query the in ways that SOQL or Excel may have trouble doing. This cell filters the contacts dataframe to show the first five rows where the title includes VP, Vice President, Director, or Head, ignoring case.
 
-# In[8]:
+# In[31]:
 
 
 #Filter based on regex
@@ -97,7 +97,9 @@ display(merged.columns)
 df_contacts[df_contacts["Title"].str.contains(r"\b(VP|Vice President|Director|Head)\b", case=False, na=False)][0:5]
 
 
-# In[9]:
+# This block generates a pivot table that counts contacts by industry and rating, then filters for Hot rated contacts in the Technology or Finance industries located in California or New York.
+
+# In[32]:
 
 
 # Hot Leads in Tech/Finance in CA/NY, in excel it needs multiple IF or FILTER functions, hard to maintain.
@@ -109,7 +111,9 @@ merged[
 ]
 
 
-# In[10]:
+# This block groups records by account name, counts the number of contacts, and returns the most frequent rating per account, defaulting to "Unknown" if none exists, then displays the first five results.
+
+# In[33]:
 
 
 #Group by AccountName and aggregate with custom function
@@ -119,10 +123,12 @@ merged.groupby("AccountName").agg({
 })[0:5]
 
 
-# In[11]:
+# This block defines a function to categorize states into regions and applies it to assign each account a region. It then calculates the percentage of each rating within those regions, reshapes the results into a table, and fills missing values with zeros.
+
+# In[34]:
 
 
-#This line calculates the percentage of each account rating within every region, reshapes it into a table, and fills in any missing values with zeros.
+#This line calculates the percentage of each account rating within every region, reshapes it into a table, and fills in any missing values with zeros. You could use a formula field for this in salesforce.
 def assign_region(state):
     if state in ["CA", "WA", "OR"]:
         return "West"
@@ -144,7 +150,9 @@ region_leads
 
 # ### DataFrame Mods
 
-# In[12]:
+# This block removes contacts with duplicate email addresses, prints the contact counts before and after, and lists all duplicated email values found.
+
+# In[35]:
 
 
 # Dropping duplicate emails in contacts dataset
@@ -156,25 +164,9 @@ print('Duplicated emails:')
 print(duplicated_emails)
 
 
-# In[13]:
+# This block standardizes the lead source by replacing "Trade Show" with "Event" and displays the first five lead source values.
 
-
-#a simple way to assign a region based on state, however you could do this with a formula field on salesforce, but this is for demo purposes
-def assign_region(state):
-    if state in ['CA', 'WA', 'OR']:
-        return 'West'
-    elif state in ['NY', 'MA', 'NJ']:
-        return 'Northeast'
-    elif state in ['TX', 'FL']:
-        return 'South'
-    else:
-        return 'Other'
-
-df_accounts['Region'] = df_accounts['BillingState'].apply(assign_region)
-df_accounts['Region'][0:3]
-
-
-# In[14]:
+# In[36]:
 
 
 #replace values
@@ -182,7 +174,9 @@ df_contacts["LeadSource"] = df_contacts["LeadSource"].replace("Trade Show", "Eve
 df_contacts["LeadSource"][0:5]
 
 
-# In[15]:
+# This block renames the "Phone" column to "ContactPhone" in the contacts dataframe and then displays all column names.
+
+# In[37]:
 
 
 #this is used to rename the columns in a dataframe, inplace means it will change the original dataframe, I do not recommend using inplace 
@@ -193,7 +187,9 @@ df_contacts.rename(columns={
 df_contacts.columns
 
 
-# In[16]:
+# A new contact record is created and appended to the contacts dataframe, then the last few rows are displayed to confirm the addition.
+
+# In[38]:
 
 
 # Example: Add a new contact row to df_contacts
@@ -213,17 +209,21 @@ df_contacts = pd.concat([df_contacts, pd.DataFrame([new_contact])], ignore_index
 display(df_contacts.tail())
 
 
-# In[17]:
+# Removes the contact with the email 'seven.dwarfs@salesforce-error.com' from the contacts dataframe and displays the last few rows.
+
+# In[39]:
 
 
 #Removing a row from a dataframe is simply at matter of exclusion
-df_contacts = df_contacts[df_contacts['Email'] != 'emma.smith@example.com']
+df_contacts = df_contacts[df_contacts['Email'] != 'seven.dwarfs@salesforce-error.com']
 display(df_contacts.tail())
 
 
 # ### Export Date to CSV
 
-# In[18]:
+# Exports the contacts dataframe to a CSV file named contacts_export.csv without including the index column.
+
+# In[40]:
 
 
 df_contacts.to_csv('../datasets/contacts_export.csv', index=False)
@@ -258,7 +258,9 @@ df_contacts.to_csv('../datasets/contacts_export.csv', index=False)
   }
 }
 
-# In[19]:
+# Loads a nested JSON file and extracts the list of accounts from within the organization structure. Each account is flattened by merging its details, location, and contact sections, then converted into a dataframe and previewed.
+
+# In[41]:
 
 
 # The first flat.update merges all key-value pairs from the 'details' dictionary into flat.
@@ -283,7 +285,9 @@ df_flat = pd.DataFrame(flat_accounts)
 display(df_flat.head())
 
 
-# In[20]:
+# Creates a new JSON data structure by extracting key fields from the first two account records and nesting phone and website under a contact section. The result is printed in a readable, indented JSON format.
+
+# In[42]:
 
 
 # output the newly created flat dataframe to a new json structure, all for funzies
@@ -309,7 +313,9 @@ for _, row in subset.iterrows():
 print(json.dumps(output, indent=2))
 
 
-# In[21]:
+# Performs fuzzy matching across account names to find similar entries with a score of 90 or higher, excluding exact matches. The results are stored in a dataframe of potential duplicates and displayed for review.
+
+# In[43]:
 
 
 #simple fuzzy matching example using fuzzywuzzy
@@ -329,10 +335,9 @@ display(fuzzy_matches_df)
 
 # ## Export Notebook
 
-# In[23]:
+# In[44]:
 
 
 get_ipython().system('jupyter nbconvert --to html "01_data_manipulation.ipynb" --output-dir=../html')
 get_ipython().system('jupyter nbconvert --to script "01_data_manipulation.ipynb" --output-dir=../notebook_script_exports')
-get_ipython().system('jupyter nbconvert --to pdf "01_data_manipulation.ipynb" --output-dir=../pdfs')
 
