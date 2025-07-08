@@ -15,6 +15,10 @@ jupyter = "*"
 pandoc = "*"
 openai = "*"
 pydantic = "*"
+requests = "*"
+avro = "*"
+grpcio = "*"
+grpcio-tools = "*"
 
 [dev-packages]
 
